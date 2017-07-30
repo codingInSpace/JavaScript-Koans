@@ -8,7 +8,7 @@ test("array literal syntax and indexing", function() {
 });
 
 test("array type", function() {
-    equal(Array, typeof([]), 'what is the type of an array?');
+    equal("object", typeof([]), 'what is the type of an array?');
 });
 
 test("length", function() {
@@ -40,6 +40,6 @@ test("queue methods", function() {
     queue.push("second");
     queue.unshift("third");
 
-    equal("first", queue.shift(), 'what will be shifted out first?');
-    equal("second", queue.shift(), 'what will be shifted out second?');
+    equal("third", queue.shift(), 'what will be shifted out first?');
+    equal("first", queue.shift(), 'what will be shifted out second?');
 });
